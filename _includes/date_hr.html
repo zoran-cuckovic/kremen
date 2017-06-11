@@ -1,0 +1,33 @@
+<!-- Whitespace added for readability 
+	!!  varibale must be named "page"  !! 
+	see:
+	https://github.com/vwochnik/jekyll-language-plugin/wiki/Date-Translation-Liquid-Tag
+	for multilingual date formatting -->
+
+
+	{%assign dt = page.date %}
+	
+	{{ dt | date: "%-d" }}.
+	
+	
+	{% assign m = dt | date: "%-m" %}
+	
+		{% case m %}
+		  {% when '1' %}siječnja 
+		  {% when '2' %}veljače 
+		  {% when '3' %}ožujka
+		  {% when '4' %}travnja
+		  {% when '5' %}svibnja 
+		  {% when '6' %}lipnja
+		  {% when '7' %}srpnja 
+		  {% when '8' %}kolovoza 
+		  {% when '9' %}rujna 
+		  {% when '10' %}listopada 
+		  {% when '11' %}studenog 
+		  {% when '12' %}prosinca 
+		{% endcase %}
+
+	
+	{{ dt | date: "%Y" }}.    
+	
+	

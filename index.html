@@ -11,21 +11,22 @@ layout: default
   {% endif %}
 
   <div class="posts">
-    {% for post in paginator.posts %}
+  <!-- variable must be "page", for date formatting -->
+    {% for page in paginator.posts %}
     <div class="post-teaser">
       <header>
         <h1>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
+          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">
+            {{ page.title }}
           </a>
         </h1>
         <p class="meta">
-          {{ post.date | date: "%B %-d, %Y" }}
+          {% include date_hr.html %}
         </p>
       </header>
       <div class="excerpt">
-        {{ post.excerpt }}
-        <a class="button" href="{{ post.url | prepend: site.baseurl }}">
+        {{ page.excerpt }}
+        <a class="button" href="{{ page.url | prepend: site.baseurl }}">
           {{ site.theme_settings.str_continue_reading }}
         </a>
       </div>

@@ -3,9 +3,55 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+// TO REMOVE FROM HERE (figures, forms etc) -----------
+
+
 figure {
   margin: 0;
 }
+
+
+	figure {
+		margin: 3rem 0;
+
+		figcaption {
+			text-align: center;
+			font-size: .9em;
+			font-style: italic;
+			//color: lighten($black, 30%);
+		}
+
+		img {
+			margin: 0 auto;
+			display: block;
+		}
+	}
+
+	img {
+		margin-bottom: 2rem;
+	}
+	
+	
+/***************
+CONTACT PAGE STYLING   NOT USED!!
+***************/
+
+.contactContent {
+	// @include span(6 of 12);
+//	 text-align: center
+	
+}
+
+#contact {
+	form {
+		// @include span(6 of 12 last);
+	}
+}
+//    ----------------------------------------------------------------------
+
+
 // For correct line number width in Github Gists
 .gist table tbody tr td {
   box-sizing: content-box;
@@ -36,13 +82,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 h1 {
-  font-size: 2.5em;
-}
-h2 {
   font-size: 2em;
 }
-h3 {
+h2 {
   font-size: 1.5em;
+}
+h3 {
+  font-size: 1.25em;
 }
 h4 {
   font-size: 1.15em;
@@ -112,10 +158,13 @@ a {
   color: $link-color;
   text-decoration: none;
 }
+
 .nav {
   list-style: none;
   margin: 0;
   padding: 0;
+ 
+  
 }
 // Responsive media
 iframe, img, embed, object, video {

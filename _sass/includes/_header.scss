@@ -1,11 +1,11 @@
 .site-header {
   @extend %padding-small;
   background: $brand-color;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 3px solid $border-color;
   display: inline-block;
   float: left;
   width: 100%;
-
+ 
   a {
     color: $header-link-color;
   }
@@ -17,6 +17,7 @@
     margin-top: -3px;
     border-radius: 0.2em;
     margin-right: 1em;
+	margin-bottom : -15px // avatar is larger than nav text !
   }
 
   .site-title {
@@ -34,6 +35,11 @@
       line-height: 1.5;
       float: right;
       text-align: right;
+	  
+	  text-transform: uppercase;
+	  font-family: $font-family-headings;
+	  font-weight: bold;
+	  font-size: 0.8em;
     }
     li {
       display: inline;
@@ -49,5 +55,6 @@
         width: 100%;
       }
     }
-  }
+	
+	}
 }

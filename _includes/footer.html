@@ -5,5 +5,8 @@
 {% if site.theme_settings.footer_text %}
 <footer class="site-footer">
 	<p class="text">{{ site.theme_settings.footer_text }}</p>
+	
+	<!-- Social icons from Font Awesome, if enabled -->
+	<p> {% include icons.html %}
 </footer>
 {% endif %}
