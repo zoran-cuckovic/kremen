@@ -42,7 +42,7 @@ theme_settings:
   youtube:
 
   # Scripts
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  google_analytics: UA-25988368-1 
   disqus_shortname:
   muut_community_name: # From muut.com settings, e.g. "muttcommunityname"
   katex: false  # Enable if using math markup
@@ -51,8 +51,8 @@ theme_settings:
   str_follow_on: "Slijedi"
   str_rss_follow: "Slijedi pomoću RSS-a "
   str_email: "E-mail"
-  str_next: "Sljedeći"
-  str_prev: "Prethodni"
+  str_next: "Prethodni" # this is tumbled up !!
+  str_prev: "Sljedeći"
   str_continue_reading: "Čitaj dalje ..."
 
   # Colours, typography and padding
