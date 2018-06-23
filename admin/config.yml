@@ -1,7 +1,10 @@
+#backend:
+ # name: git-gateway
+  #branch: master # Branch to update (optional; defaults to master)
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-  
+  name: github
+  repo: zoran-cuckovic/kremen # Path to your Github repository
+
   # This line should *not* be indented
 # publish_mode: editorial_workflow
 
